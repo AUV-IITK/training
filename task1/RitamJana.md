@@ -267,7 +267,6 @@ I earlier used tar -x and tar -xvzf to extract but got error. On researching, re
 
 The use of -i to use the private ssh key stored in one's computer.
 Find the location od password file in /etc folder.
-4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 
 ---
 
