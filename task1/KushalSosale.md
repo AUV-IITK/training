@@ -128,14 +128,14 @@
 -----------------
 **Level 14**<br>
 ~nc localhost 30000<br>
-~4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e<br>
+~'4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e'<br>
 This is the password for bandit14 which we are asked to forward to port 30000 on localhost<br>
 
 ***Learnt how to use Netcat (nc)***<br>
 -----------------
 **Level 15**<br>
 ~openssl s_client -connect localhost:30001<br>
-~BfMYroe26WYalil77FoDi9qh59eK5xNr<br>
+~'BfMYroe26WYalil77FoDi9qh59eK5xNr'<br>
 This is the password for bandit15<br>
 
 ***Learnt how to use openssl's s_client command to send data with SSL encryption***<br>
