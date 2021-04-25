@@ -16,6 +16,7 @@ I had to use the _man_ command to get the correct command.
 ### Codes
 
 > ls
+>
 > cat readme
 
 ---
@@ -45,7 +46,9 @@ Learnt the use of relative path. Earlier I was using only /- (similar to C++ for
 ### Codes
 
 > ls -al
+>
 > cd inhere/
+>
 > cat ".hidden"
 
 ---
@@ -55,7 +58,9 @@ Learnt the use of relative path. Earlier I was using only /- (similar to C++ for
 ### Codes
 
 > ls
+>
 > cd inhere/
+>
 > strings ./-file*
 
 ### Learning
@@ -69,8 +74,11 @@ I learnt the use of strings command to display printable characters in the file.
 ### Codes
 
 > ls
+>
 > cd inhere/
+>
 > find . -type f -readable ! -executable -size 1033c
+>
 > cat maybehere07/-file2
 
 ### Learning
@@ -84,6 +92,7 @@ I learnt the use of find command an the various tests related to find using man 
 ### Codes
 
 > find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+>
 > cat /var/lib/dpkg/info/bandit7.password
 
 ### Learning
@@ -180,39 +189,57 @@ I was earlier trying using multiple tr commands but it was not working. I then h
 ### Codes
 
 > mkdir /tmp/ritam123
+>
 > cp data.txt -t /tmp/ritam123
+>
 > cd /tmp/ritam123
+>
 > file data.txt
+>
 > xxd -r data.txt > file0
+>
 > file file0 (file was compressed in gzip format)
 >
 > mv file0 file1.gz
+>
 > gzip -d file1.gz
+>
 > file file1 (file was compressed in bzip2 format)
 >
 > mv file1 file3.bz2
+>
 > bzip2 -d file3.bz2
+>
 > file file3 (file was compressed in gzip format)
 >
 > mv file3 file4.gz
+>
 > gzip -d file4.gz
+>
 > file file4 (file was compressed from tar format)
 >
 > tar -xvf file4
+>
 > file data5.bin (file was compressed from tar format)
 >
 > tar -xvf data5.bin
+>
 > file data6.bin (file was compressed in bzip2 format)
 >
 > mv data6.bin file5.bz2
+>
 > bzip2 -d file5.bz2
+>
 > file file5 (file was compressed from tar format)
 >
 > tar -xvf file5
+>
 > file data8.bin (file was compressed in gzip format)
 >
 > mv data8.bin file6.gz
+>
 > gzip -d file6.gz
+>
 > file file6 (ASCII Text file)
 >
 > cat file6
@@ -229,8 +256,11 @@ I earlier used tar -x and tar -xvzf to extract but got error. On researching, re
 ### Codes
 
 > ssh bandit14@localhost -i sshkey.private
+>
 > cd etc/
+>
 > cd bandit_pass/
+>
 > cat bandit14
 
 ### Learning
