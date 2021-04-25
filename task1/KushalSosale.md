@@ -125,14 +125,14 @@ SSH Assignment-1<br>
 ~ls<br>
 ~cat bandit1<br>
 ***Learnt how to use SSH keys to connect***<br>
-
+---------------
 **Level 14**<br>
 ~nc localhost 30000<br>
 ~4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e<br>
 >This is the password for bandit14 which we are asked to forward to port 30000 on localhost<br>
 
 ***Learnt how to use Netcat (nc)***<br>
------------------
+-------------
 
 **Level 15**<br>
 ~openssl s_client -connect localhost:30001<br>
