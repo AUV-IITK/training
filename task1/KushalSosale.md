@@ -116,7 +116,7 @@
 ~file data8<br>
 ~cat data8<br>
 ***Learnt how to decode a Hexdump using 'xxd', how to unzip bzip2, gzip and tar files and how to use the 'mv' command to rename files***<br>
-----------
+----------------
 **Level 13**<br>
 ~ls<br>
 ~ssh -i sshkey.private bandit14@localhost<br>
@@ -125,13 +125,13 @@
 ~ls<br>
 ~cat bandit1<br>
 ***Learnt how to use SSH keys to connect.***<br>
--------------------
+-----------------
 **Level 14**<br>
 ~nc localhost 30000<br>
 ~4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e<br>
 >This is the password for bandit14 which we are asked to forward to port 30000 on localhost<br>
-***Learnt how to use Netcat ('nc')***<br>
-----------------------
+***Learnt how to use Netcat (nc)***<br>
+-----------------
 **Level 15**<br>
 ~openssl s_client -connect localhost:30001<br>
 ~BfMYroe26WYalil77FoDi9qh59eK5xNr<br>
