@@ -125,9 +125,7 @@ SSH Assignment-1<br>
 ~ls<br>
 ~cat bandit1<br>
 ***Learnt how to use SSH keys to connect***<br>
-**Test**
------------------
-**Test**
+
 **Level 14**<br>
 ~nc localhost 30000<br>
 ~4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e<br>
