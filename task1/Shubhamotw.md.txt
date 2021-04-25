@@ -1,0 +1,77 @@
+SHUBHAM KUMAR
+        LEVEL0-
+
+ssh (used to connect to server)
+exit- to exit out of the terminal
+Brief- learnt how to connect to a remote server using ssh and by using username ,password.
+
+        LEVEL1-
+Cd-change directory
+Ls-show content of directory
+Cat - show file content
+Cd ./-  for finding file with name - (special character)
+  
+         LEVEL2-
+For opening file containing space like’ spaces in this filename’
+cat  spaces\ in\ this\ filename
+
+         LEVEL 3-
+ls 
+cd inhere
+ls -a (to get hidden file)
+cat  .hidden (to open hidden file)
+
+         LEVEL4-
+du - to get the file size
+cat ./-file
+(to read file eg.
+bandit4@bandit:~/inhere$ cat ./-file00
+/`2ғ%rL~5g��bandit4@bandit:~/inhere$ cat ./-file01
+p,k;r*        .!CJ  dx,bandit4@bandit:~/inhere$ cat ./-file02
+e)#5pV_ׯmmbandit4@bandit:~/inhere$ cat ./-file03
+h!TQO`4"aל߂phT,Abandit4@bandit:~/inhere$ cat ./-file04
+?bandit4@bandit:~/inhere$ cat ./-file05
+rl$?h9('!ye#xO=bandit4@bandit:~/inhere$ cat ./-file06
+ly~Af-E{mܗMbandit4@bandit:~/inhere$ cat ./-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+bandit4@bandit:~/inhere$ cat ./-file08
+T?ijîPFlnJ{@bandit4@bandit:~/inhere$ cat ./-file09
+e0$in=_b5FAPszgNbandit4@bandit:~/inhere$ exit
+logout)
+find . -read (it also works)
+
+
+
+         LEVEL 5-
+find .  -size 1033c (to find the file with size 1033)
+
+
+         LEVEL6-
+ find / -user bandit7 -group bandit6 -size 33c
+     ( to find file with user, group ,size)
+
+
+
+        LEVEL 7-
+grep millionth data.txt
+   (to get the line containing text millionth)
+
+
+
+         LEVEL-8	
+sort  data.txt |uniq -u
+(to sort the data then find unique line that came only once)
+
+
+
+           LEVEL9
+strings -n 10 data.txt
+    ( to find strings in given file that has character more than 10)
+
+
+          LEVEL 10
+Base64 -d data.txt
+ (to decode the data present in the file data.txt using base64)
+
+LEVEL 11
+
