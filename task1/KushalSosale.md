@@ -124,7 +124,7 @@ SSH Assignment-1<br>
 ~cd /etc/bandit_pass<br>
 ~ls<br>
 ~cat bandit1<br>
-***Learnt how to use SSH keys to connect.***<br>
+***Learnt how to use SSH keys to connect***<br>
 -----------------
 
 **Level 14**<br>
