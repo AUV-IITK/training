@@ -10,6 +10,6 @@ Formula is given by [(R1+R2)/(R1+2R2)]*100 .
 
 If R1 >>> R2 then duty cycle becmes 100% 
 
-If R2 >>> R1 then duty cycle becomes 50 % , which is what we need .
+If R2 >>> R1 then duty cycle becomes 50 % , which is what we need ..
 
 LINK ->> https://www.tinkercad.com/things/2SOGFyACcCI-fantabulous-lappi-gogo/editel?tenant=circuits
