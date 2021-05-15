@@ -11,5 +11,5 @@
     4. Made the circuit in tinkercad(learnt about using it from some basic tutorials)
 
 ***
-My circuit link : https://www.tinkercad.com/things/3otkpNst2HQ-electricaltask1shivams
+My circuit link : https://www.tinkercad.com/things/3otkpNst2HQ-electricaltask1shivams/editel?sharecode=JOx5tU7IWntP3igvoLEhijOUH492_yJ50ykqLO5hYM0
 ***
