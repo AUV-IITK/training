@@ -13,4 +13,4 @@ During the task I learnt that the binary counter is used to count by lighting up
  I used a 5 V power supply,4 different coloured LEDs(for main count),4 resistors (of 250 ohm each),a frequency modulator(working on square function) and a single LED(and a corresponding resistor of 250 ohm) to indicate the frequency.
 
  ## Link-
-[Project_URL] ](https://www.tinkercad.com/things/6Cqn0gziJdq-copy-of-4-bit-binary-counter/editel?tenant=circuits)
+[Project_URL](https://www.tinkercad.com/things/6Cqn0gziJdq-copy-of-4-bit-binary-counter/editel?tenant=circuits)
