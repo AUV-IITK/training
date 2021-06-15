@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="image_enhancer_200836" pkg="image_enhancer_200836" type="image_enhancer_200836">
+  <param name="brightness" type="int" value="1" />
+  <param name="contrast" type="double" value="1.0" />
+</node>
+\endverbatim
+

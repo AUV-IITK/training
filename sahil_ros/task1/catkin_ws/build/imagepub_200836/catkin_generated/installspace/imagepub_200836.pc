@@ -1,0 +1,8 @@
+prefix=/home/sahil/myfiles/auv/training/sahil_ros/task1/catkin_ws/install
+
+Name: imagepub_200836
+Description: Description of imagepub_200836
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

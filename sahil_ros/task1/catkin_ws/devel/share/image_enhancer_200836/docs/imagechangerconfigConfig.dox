@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~brightness" : \b [int] brightness of image min: -2147483648, default: 1, max: 2147483647
+- \b "~contrast" : \b [double] contrast of image min: -std::numeric_limits<double>::infinity(), default: 1.0, max: std::numeric_limits<double>::infinity()
+

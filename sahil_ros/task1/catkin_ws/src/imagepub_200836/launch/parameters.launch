@@ -1,0 +1,6 @@
+<launch>
+<param name='height' type='int' value="400" />
+<param name='width' type='int' value="400" />
+<param name="frequency" type='double' value='0.1' />
+<param name='square_size' type='int' value='50' />
+</launch>
