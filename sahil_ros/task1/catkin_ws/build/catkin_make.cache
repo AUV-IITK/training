@@ -1,0 +1,2 @@
+image_enhancer_200836:imagepub_200836
+-DCATKIN_DEVEL_PREFIX=/home/sahil/myfiles/auv/training/sahil_ros/task1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sahil/myfiles/auv/training/sahil_ros/task1/catkin_ws/install -G Unix Makefiles
