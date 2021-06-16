@@ -1,0 +1,4 @@
+<launch>
+  <node name="cb_publisher" pkg="imagepub_200738" type="cb_publisher.cpp" output="screen"/>
+  <node name="file_publisher" pkg="imagepub_200738" type="file_publisher.cpp" output="screen"/>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/pulkit/catkin_ws/install
+
+Name: imagepub_200738
+Description: Description of imagepub_200738
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
