@@ -7,5 +7,5 @@
 
 **Software task two**
 
-**Work done**- After attending the live tutorials on ROS by the seniors,I went through the slides of ROS tutorials by  robotics club and also the tutorials given on the official ROS website.I was unable to complete the assignment as I took a lot of time going through the tutorials .Further I was unable to devote a decent amount of time to AUV ,as I had 4 quizzes this week(ESC,PHY,MTH and CHM102). 
+**Work done**- After attending the live tutorials on ROS by the seniors,I went through the slides of ROS tutorials by  robotics club and also the tutorials given on the official ROS website.I was unable to complete the assignment as I took a lot of time going through the tutorials .Further I was unable to devote a decent amount of time to AUV during the last 1.5 weeks as I had 4 quizzes this week(ESC,PHY,MTH and CHM102).
 
