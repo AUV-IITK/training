@@ -11,3 +11,5 @@ Didn't try the third question.
 
 Main difficulty in understanding the code for different questions, what headers file should be included etc.
 
+Didn't give much time due to pre registraton and Quizzes.
+
