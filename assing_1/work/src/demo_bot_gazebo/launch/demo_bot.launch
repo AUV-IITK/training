@@ -1,0 +1,12 @@
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find demo_bot_gazebo)/worlds/demo_bot.world"/>
+    <!-- more default parameters can be changed here -->
+  </include>
+  <!-- <node name='baxter' pkg = "gazebo_ros" type="spawn_model" args = "-file $(find baxter_description)/urdf/baxter.urdf -urdf -z 1 -model baxter"/>   -->
+  <node name="my_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find demo_bot_gazebo)/demo_bot_description/urdf/bot2.urdf -urdf -z 1 -model bot2" />
+  <node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen">
+        <remap from="/cmd_vel" to="/kbot/base_controller/cmd_vel"/>
+    </node>
+</launch>

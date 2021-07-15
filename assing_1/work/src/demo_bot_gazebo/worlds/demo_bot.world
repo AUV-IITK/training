@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+
+    <light type="point" name="additional_light">
+      <cast_shadows>true</cast_shadows>
+      <intensity> 2 </intensity>
+      <diffuse> 0 0.8 0.5 1 </diffuse>
+      <pose> 2 2 2 0 0 0 </pose>
+    </light>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://postbox</uri>
+      <name>post_box</name>
+      <pose>-1.0 5.0 0 0 0 0</pose>
+    </include>
+
+    <model name="box">
+      <pose>-1 -1 0 0 0 0</pose>
+      <link name="body">
+        <collision name="collision1">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual1">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
