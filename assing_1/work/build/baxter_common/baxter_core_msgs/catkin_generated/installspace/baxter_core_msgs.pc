@@ -1,0 +1,8 @@
+prefix=/home/sahil/myfiles/auv/training/assing_1/work/install
+
+Name: baxter_core_msgs
+Description: Description of baxter_core_msgs
+Version: 1.2.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime geometry_msgs sensor_msgs std_msgs

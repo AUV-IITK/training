@@ -1,0 +1,8 @@
+prefix=/home/sahil/myfiles/auv/training/assing_1/work/devel
+
+Name: baxter_description
+Description: Description of baxter_description
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
