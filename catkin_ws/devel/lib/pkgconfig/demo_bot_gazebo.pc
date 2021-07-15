@@ -1,0 +1,8 @@
+prefix=/home/pulkit/catkin_ws/devel
+
+Name: demo_bot_gazebo
+Description: Description of demo_bot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,5 @@
+
+<launch>
+    <include file="$(find demo_bot_gazebo)/launch/demo_bot.launch"></include>
+    
+</launch>

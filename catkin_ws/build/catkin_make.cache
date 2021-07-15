@@ -1,2 +1,2 @@
-imagepub_200738
+demo_bot_gazebo:gazebo_ros_demos/gazebo_tutorials:gazebo_ros_demos/rrbot_control:gazebo_ros_demos/rrbot_description:gazebo_ros_demos/rrbot_gazebo:imagepub_200738
 -DCATKIN_DEVEL_PREFIX=/home/pulkit/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pulkit/catkin_ws/install -G Unix Makefiles
