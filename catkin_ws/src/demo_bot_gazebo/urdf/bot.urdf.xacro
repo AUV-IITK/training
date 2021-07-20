@@ -92,7 +92,7 @@
       <geometry>
         <cylinder length="0.02" radius="0.04"/>
       </geometry>
-      <material name="DarkGray"/>
+      <material name="Black"/>
     </visual>
     <collision>
       <origin rpy="1.57079632679 0 0 " xyz="0 0 0"/>
@@ -139,7 +139,7 @@
       <geometry>
         <cylinder length="0.02" radius="0.04"/>
       </geometry>
-      <material name="DarkGray"/>
+      <material name="Black"/>
     </visual>
     <collision>
       <origin rpy="1.57079632679 0 0 " xyz="0 0 0"/>
@@ -170,7 +170,7 @@
     <limit effort="100" velocity="100"/>
     <joint_properties damping="0.0" friction="0.0"/>
   </joint>
-  <!-- Transmission is important to link the joints and the controller -->
+  <!--Transmission is important to link the joints and the controller -->
   <transmission name="front_left_wheel_joint_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="front_left_wheel_joint"/>
@@ -178,7 +178,7 @@
       <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-  </transmission>
+  </transmission> 
   <!--Caster front  -->
   <link name="caster_front_link">
     <visual>
@@ -238,7 +238,7 @@
     <turnGravityOff>false</turnGravityOff>
   </gazebo>
   <!-- SENSORS -->
-  <!-- hokuyo -->
+  
   <link name="hokuyo_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -280,7 +280,212 @@
         <frameName>hokuyo_link</frameName>
       </plugin>
     </sensor>
+  </gazebo> 
+
+  <joint name="camera_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="-0.125 0 0.0325" rpy="0 0 3.14"/>
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+  </joint>
+
+  <!-- Camera -->
+  <link name="camera_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="Red"/>
+    </visual>
+
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  
+  
+
+  <gazebo reference="camera_link">
+    <sensor type="camera" name="bcamera">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>rrbot/bcamera</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
   </gazebo>
+
+<!--Right camera-->
+
+  <joint name="camera_joint1" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="0.1 0.08 0.0325" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="r_camera"/>
+  </joint>
+
+ 
+  <link name="r_camera">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="Red"/>
+    </visual>
+
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+   <gazebo reference='r_camera'>
+  <material> gazebo/white</material>
+  </gazebo>
+
+<!--Left camera-->
+
+  <joint name="camera_joint2" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="0.1 -0.08 0.0325" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="l_camera"/>
+  </joint>
+
+  
+  <link name="l_camera">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="Red"/>
+    </visual>
+
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+
+ <gazebo reference="l_camera">
+ <material> gazebo/white</material>
+    <sensor type="multicamera" name="stereo_camera">
+      <update_rate>30.0</update_rate>
+      <camera name="left">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <camera name="right">
+        <pose>0 -0.07 0 0 0 0</pose>
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="stereo_camera_controller" filename="libgazebo_ros_multicamera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>rrbot/camera</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>l_camera</frameName>
+        <rightFrameName>r_camera</rightFrameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+
+
+
   <!-- Differential drive controller  -->
   <gazebo>
     <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller_front">
