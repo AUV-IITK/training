@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find diff_drive_description)/urdf/diff_drive.urdf.xacro' " />
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model RoboBot -file $(find diff_drive_description)/urdf/diff_drive.urdf.xacro"/>
+    
+</launch>

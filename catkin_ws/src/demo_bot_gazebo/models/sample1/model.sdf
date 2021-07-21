@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="sample1">
+    <pose>1 1 0 0 0 0</pose>
+    <static>false</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1 2 1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>1 2 1</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/BumpyMetal</name>
+          </script>
+      </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

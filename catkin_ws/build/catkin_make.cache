@@ -1,0 +1,2 @@
+demo_bot_gazebo:diff_drive_description:new
+-DCATKIN_DEVEL_PREFIX=/home/shubham/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shubham/catkin_ws/install -G Unix Makefiles

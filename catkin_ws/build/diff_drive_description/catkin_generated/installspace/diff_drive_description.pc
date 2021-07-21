@@ -1,0 +1,8 @@
+prefix=/home/shubham/catkin_ws/install
+
+Name: diff_drive_description
+Description: Description of diff_drive_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

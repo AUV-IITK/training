@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/shubham/catkin_ws/src/demo_bot_gazebo/include/**",
+        "/home/shubham/catkin_ws/src/diff_drive_description/include/**",
+        "/home/shubham/catkin_ws/src/new/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

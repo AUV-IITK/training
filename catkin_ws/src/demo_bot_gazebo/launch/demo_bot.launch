@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find demo_bot_gazebo)/worlds/demo_bot.world"/>
+    <env name="GAZEBO_MODEL_PATH" value="$(find demo_bot_gazebo)/models"/>
+    <env name="GAZEBO_RESOURCE_PATH" value="$(find diff_drive_description)/media/materials"/>
+  </include>
+</launch>
